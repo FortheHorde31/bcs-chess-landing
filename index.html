@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>БКС — Шах и мат рынку</title>
 <meta name="description" content="Рынок играет чёрными. Сыграй партию против рынка с гроссмейстером БКС за спиной — и поставь мат за 7 ходов. Открой брокерский счёт за 5 минут.">
+<link rel="icon" type="image/svg+xml" href="logo_bcs.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -56,12 +57,7 @@
     background:linear-gradient(to bottom, rgba(6,8,13,.85), transparent);
   }
   .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
-  .logo-mark{
-    width:38px;height:38px;border-radius:8px;flex:none;
-    background:linear-gradient(135deg,var(--gold),#a8842a);
-    display:flex;align-items:center;justify-content:center;
-    color:#0a0c12;font-weight:700;font-size:13px;letter-spacing:.02em;
-  }
+  .logo-mark{width:38px;height:38px;flex:none;display:block;object-fit:contain}
   .logo-text{display:flex;flex-direction:column;line-height:1.25}
   .logo-text b{font-size:14px;font-weight:600;letter-spacing:.06em}
   .logo-text span{font-size:10px;color:var(--muted);letter-spacing:.22em;text-transform:uppercase}
@@ -288,12 +284,7 @@
     padding:18px 22px;border-bottom:1px solid var(--line-soft);
     position:sticky;top:0;background:rgba(14,17,24,.96);backdrop-filter:blur(8px);z-index:2;
   }
-  .dobs-head .mark{
-    width:36px;height:36px;border-radius:8px;flex:none;
-    background:linear-gradient(135deg,var(--gold),#a8842a);
-    display:flex;align-items:center;justify-content:center;
-    color:#0a0c12;font-weight:700;font-size:12px;
-  }
+  .dobs-head .mark{width:36px;height:36px;flex:none;display:block;object-fit:contain}
   .dobs-head .titles{line-height:1.3;min-width:0}
   .dobs-head .ttl{font-size:15px;font-weight:600;color:var(--text)}
   .dobs-head .sbt{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}
@@ -359,7 +350,7 @@
 <!-- ======================= HEADER ======================= -->
 <header>
   <a class="logo" href="#" aria-label="БКС — на главную">
-    <span class="logo-mark">БКС</span>
+    <img class="logo-mark" src="logo_bcs.svg" alt="Логотип БКС" width="38" height="38">
     <span class="logo-text"><b>БКС Мир инвестиций</b><span>Шах и мат рынку</span></span>
   </a>
   <a class="btn btn-gold js-open-account" href="https://bcs.ru" target="_blank" rel="noopener">Открыть счёт</a>
@@ -518,7 +509,7 @@
   <div class="dobs-backdrop" data-dobs-close></div>
   <div class="dobs-dialog" role="dialog" aria-modal="true" aria-label="Открытие счёта в БКС">
     <div class="dobs-head">
-      <span class="mark">БКС</span>
+      <img class="mark" src="logo_bcs.svg" alt="" width="36" height="36">
       <div class="titles">
         <div class="sbt">Твой ход</div>
         <div class="ttl">Открытие брокерского счёта</div>
